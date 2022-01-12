@@ -20,8 +20,6 @@ public class GetServlet extends HttpServlet {
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 文字化け防止
-        request.setCharacterEncoding("UTF-8");
         // パラメータの取得
         String q = request.getParameter("q");
         // ビューにデータを渡す
